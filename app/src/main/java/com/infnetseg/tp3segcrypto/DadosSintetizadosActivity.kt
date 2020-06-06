@@ -93,9 +93,9 @@ class DadosSintetizadosActivity : AppCompatActivity() {
                 while(cont < 6)
                 {
                     if(cont == 5)
-                        textoDados += "${cont+1} - ${(respostasArray[cont] / qtdAval)*100.0}%\n"
+                        textoDados += "${cont+1} - ${String.format("%.2f",((respostasArray[cont] / qtdAval)*100.0))}%\n"
                     else
-                        textoDados += "${cont+1} - ${(respostasArray[cont] / qtdAval)*100.0}%, "
+                        textoDados += "${cont+1} - ${String.format("%.2f",(respostasArray[cont] / qtdAval)*100.0)}%, "
 
                     cont++
                 }
