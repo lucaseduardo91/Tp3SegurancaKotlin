@@ -31,7 +31,7 @@ class CadastroAvaliacaoActivity : AppCompatActivity() {
 
             if(!empresa.isNullOrBlank() && !bairro.isNullOrBlank() && !verificaRespostas()) {
                 var db = DatabaseFactory.getInstance(null)
-                CadastrarAvaliacaoAsync(this, db,auth.currentUser!!.uid,empresa,bairro,concatenaRespostas()).execute()
+                CadastrarAvaliacaoAsync(this, db,auth.currentUser!!.uid,empresa,bairro.capitalize(),concatenaRespostas()).execute()
             }
             else
                 Toast.makeText(this,"Preencha os campos corretamente!",Toast.LENGTH_SHORT)

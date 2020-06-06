@@ -20,5 +20,10 @@ class MenuActivity : AppCompatActivity() {
             var intent = Intent(this,MinhasAvaliacoesActivity::class.java)
             startActivity(intent)
         }
+
+        btn_dados_sintetizados.setOnClickListener {
+            var intent = Intent(this,DadosSintetizadosActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

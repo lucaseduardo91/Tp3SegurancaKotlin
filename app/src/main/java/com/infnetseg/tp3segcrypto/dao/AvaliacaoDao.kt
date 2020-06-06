@@ -21,8 +21,8 @@ interface AvaliacaoDAO {
     @Query("SELECT * FROM avaliacao WHERE serie = :serieGerado")
     fun loadBySerie(serieGerado: String): List<Avaliacao>?
 
-    @Query("SELECT * FROM avaliacao ORDER BY bairro")
-    fun getAllData(): List<Avaliacao>
+    @Query("SELECT * FROM avaliacao")
+    fun getAllData(): List<Avaliacao>?
 
     @Insert
     fun insertAll(vararg avaliacao: Avaliacao)
