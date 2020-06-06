@@ -37,7 +37,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:visibility="gone"
-        android:text="Você não tem avaliacções cadastradas."
+        android:text="Você não tem avaliações cadastradas."
         android:fontFamily="casual"
         android:textSize="28sp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

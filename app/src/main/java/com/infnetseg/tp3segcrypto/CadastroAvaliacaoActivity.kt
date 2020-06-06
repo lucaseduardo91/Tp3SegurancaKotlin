@@ -45,22 +45,19 @@ class CadastroAvaliacaoActivity : AppCompatActivity() {
         var respostas = respostas
         var db = db
         var serie = serie
-        var conversor = CriptoConverter()
         var dialogApi = LoadingAlerta(activity)
 
         override fun onPreExecute() {
             super.onPreExecute()
-            dialogApi.startLoadingDialog("Buscando suas avalições...")
+            dialogApi.startLoadingDialog("Cadastrando avaliação...")
         }
 
         override fun doInBackground(vararg params: Void?): Void? {
             var empresaCripto = CriptoString()
-            var bairroCripto = CriptoString()
 
             empresaCripto.setClearText(empresa)
-            bairroCripto.setClearText(bairro)
 
-            db.avaliacaoDao().insertAll(Avaliacao(0,serie, empresaCripto, bairroCripto,respostas))
+            db.avaliacaoDao().insertAll(Avaliacao(0,serie, empresaCripto, bairro,respostas))
             dialogApi.dismiss()
 
             var intent = Intent(activity,MenuActivity::class.java)

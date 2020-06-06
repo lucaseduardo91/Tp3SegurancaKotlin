@@ -29,4 +29,7 @@ interface AvaliacaoDAO {
 
     @Delete
     fun delete(avaliacao: Avaliacao)
+
+    @Query("DELETE FROM avaliacao")
+    fun deleteAll()
 }

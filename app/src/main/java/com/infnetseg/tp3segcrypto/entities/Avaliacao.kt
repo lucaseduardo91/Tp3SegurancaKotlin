@@ -10,6 +10,6 @@ data class Avaliacao (
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     @ColumnInfo(name = "serie") val serie: String,
     @ColumnInfo(name = "empresa") val empresa: CriptoString?,
-    @ColumnInfo(name = "bairro") val bairro: CriptoString?,
+    @ColumnInfo(name = "bairro") val bairro: String?,
     @ColumnInfo(name = "respostas") val respostas: String?
 )

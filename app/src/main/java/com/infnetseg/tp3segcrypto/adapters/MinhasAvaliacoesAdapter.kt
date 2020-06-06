@@ -32,7 +32,7 @@ class MinhasAvaliacoesAdapter (avaliacoes : List<Avaliacao>) :
     override fun onBindViewHolder(holder: MinhasAvaliacoesViewHolder, position: Int) {
 
         holder.empresa.text = listaAval[position].empresa!!.getClearText()
-        holder.bairro.text = listaAval[position].bairro!!.getClearText()
+        holder.bairro.text = listaAval[position].bairro!!
         organizaRespostas(holder.respostas, listaAval[position].respostas!!)
     }
 
