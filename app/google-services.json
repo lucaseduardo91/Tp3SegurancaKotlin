@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "788112508586",
+    "firebase_url": "https://tp3segcrypto.firebaseio.com",
+    "project_id": "tp3segcrypto",
+    "storage_bucket": "tp3segcrypto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788112508586:android:cab92573439a3f9f1072d3",
+        "android_client_info": {
+          "package_name": "com.infnetseg.tp3segcrypto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788112508586-dhc43i7mrqvggh9iehu2lcl42ougqrgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.infnetseg.tp3segcrypto",
+            "certificate_hash": "ef2f159849ac43779d7461a9d82c0cc436434020"
+          }
+        },
+        {
+          "client_id": "788112508586-jfnfa1gcjql6m11749blnor3mlosq35r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBynPahxCUL-No3szNLidEvmopdnlH1_rU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788112508586-jfnfa1gcjql6m11749blnor3mlosq35r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
